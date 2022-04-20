@@ -42,9 +42,9 @@
                     </ul>
                     <form class="d-flex">
 
-                        <input class="form-control me-2 " type="search" placeholder="Search your food"
+                        <input id="searchInput" class="form-control me-2 " type="search" placeholder="Search your food"
                             aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                        <button onclick="searchMeals()" class="btn btn-outline-warning" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -121,6 +121,14 @@
                 </div>
             </div>
         </div>
+
+        <!-- Food Show -->
+        <h1 class="text-warning text-center text-decoration-underline my-4">  See Foods  </h1>
+        <!-- food show in card -->
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="show-meals">
+            
+        </div>
+
     </main>
 
 
