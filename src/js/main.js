@@ -2,11 +2,11 @@ console.log('hello');
 const searchMeals = () => {
     const searchInput = document.getElementById('searchInput')
     const searchText = searchInput.value;
-    // searchInput.value = '';
-    console.log(searchText);
+    searchInput.value = '';
+    // console.log(searchText);
 
 
-     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
     fetch(url)
     .then(res => res.json())
     .then(data => displayFood(data.meals));
@@ -47,6 +47,7 @@ const showFoodDetails = foodId => {
 const showDetails = food => {
   console.log(food);
   const showDetail = document.getElementById('showDetails')
+  showDetail.textContent = '';
   const div = document.createElement('div')
   div.classList.add('card')
   div.style.width = '18rem';

@@ -17,37 +17,38 @@
 </head>
 
 <body>
-    <header>
-        <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand text-warning" href="#"><i class="fa-solid fa-burger"></i> FoodFasti</a>
-                <button class="navbar-toggler text-warning" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-burger"></i>
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-warning active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-warning" href="#">Food </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-warning ">Price & menu</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex"> <!--from-->
-                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button onclick="searchMeals()" class="btn btn-outline-success" type="submit">Search</button>
-                    </div>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="#"><i class="fa-solid fa-burger"></i> FoodFasti</a>
+            <button class="navbar-toggler text-warning" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-burger"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">Food </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning ">Price & menu</a>
+                    </li>
+                </ul>
+                <div class="d-flex"> <!--from-->
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button onclick="searchMeals()" class="btn btn-outline-success" type="submit">Search</button>
                 </div>
             </div>
-        </nav>
-        <!-- navbar end -->
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <header>
+      
 
         <!-- carousel section start -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
