@@ -18,7 +18,7 @@ onload();
 
  #show food dynamically
  <div class="card">
-                <img src="${food.strMealThumb}" class="card-img-top" alt="...">
+<!--                 <img src="${food.strMealThumb}" class="card-img-top" alt="..."> -->
                 <div class="card-body">
                   <h5 class="card-title">${food.strMeal}</h5>
                   <p class="card-text">Catagory : ${food.strCategory}</p>
@@ -39,7 +39,7 @@ onload();
   div.classList.add('card')
   div.style.width = '18rem';
   div.innerHTML=`
-  <img src="${food.strMealThumb}" class="card-img-top" alt="...">
+<!--   <img src="${food.strMealThumb}" class="card-img-top" alt="..."> -->
   <div class="card-body">
     <h5 class="card-title">${food.strMeal} </h5>
     <p class="card-text">If you want to see how to make this food watch youtube or want to see the recepies click visit</p>
