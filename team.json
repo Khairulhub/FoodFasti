@@ -1,0 +1,31 @@
+[
+	{
+		"name": "Cade House",
+		"phone": "(842) 786-8119",
+		"email": "lobortis.mauris@outlook.ca",
+		"address": "Ap #890-147 Adipiscing Av.",
+		"url": "./src/team/02.jpg"
+	},
+	{
+		"name": "Clare Kaufman",
+		"phone": "1-574-587-3887",
+		"email": "tristique.ac@hotmail.com",
+		"address": "287-6458 Magna Rd.",
+		"url": "./src/team/09.jpg"
+	},
+	{
+		"name": "Quyn Schwartz",
+		"phone": "(622) 632-5781",
+		"email": "ac.nulla@icloud.couk",
+		"address": "P.O. Box 395, 1045 Gravida St.",
+		"url": "./src/team/11.jpg"
+	},
+	{
+		"name": "Kylynn Kelly",
+		"phone": "(357) 167-5648",
+		"email": "vel@yahoo.edu",
+		"address": "187-8112 Integer St.",
+		"url": "./src/team/12.jpg"
+	}
+
+]

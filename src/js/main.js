@@ -73,3 +73,11 @@ const showDetails = food => {
   showDetail.appendChild(div)
 
 }
+
+
+
+
+
+
+
+
