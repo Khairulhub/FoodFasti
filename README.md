@@ -49,3 +49,5 @@ onload();
   `;
 
   showDetail.appendChild(div)
+  <img src="https://github.com/Khairulhub/FoodFasti/issues/1#issue-1211331216" art="screenshort">
+  
