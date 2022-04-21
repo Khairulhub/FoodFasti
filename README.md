@@ -49,5 +49,7 @@ onload();
   `;
 
   showDetail.appendChild(div)
-  <img src="https://drive.google.com/file/d/1z4fN4lAgUHy2H0iw7VOAf8jMze4UHE8F/view?usp=sharing" alt="screenshort">
+
+
+![screenshot (4)](https://user-images.githubusercontent.com/81640708/164518983-c45174f7-62de-4ba2-8cfe-091e8c846a6d.png)
   
