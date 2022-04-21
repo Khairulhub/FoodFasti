@@ -6,7 +6,7 @@ www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 function name (searchMeals) 
  
 
- #show all food from api
+ # show all food from api
   const showMeals =  document.getElementById('show-meals')  // line 28
 const onload = () => {
   const url = `https://www.themealdb.com/api/json/v1/1/search.php?s`
@@ -16,7 +16,7 @@ const onload = () => {
 }
 onload();
 
- #show food dynamically
+ # show food dynamically
  <div class="card">
 <!--                 <img src="${food.strMealThumb}" class="card-img-top" alt="..."> -->
                 <div class="card-body">
@@ -30,7 +30,7 @@ onload();
         
   </div> 
   
-  #single food detail
+  # single food detail
   const showDetails = food => {
   console.log(food);
   const showDetail = document.getElementById('showDetails')
