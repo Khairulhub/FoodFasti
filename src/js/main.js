@@ -1,4 +1,11 @@
-console.log('hello');
+const showMeals =  document.getElementById('show-meals')  // line 28
+const onload = () => {
+  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s`
+  fetch(url)
+  .then(res => res.json())
+    .then(data => displayFood(data.meals))
+}
+onload();
 const searchMeals = () => {
     const searchInput = document.getElementById('searchInput')
     const searchText = searchInput.value;
@@ -11,12 +18,14 @@ const searchMeals = () => {
     .then(res => res.json())
     .then(data => displayFood(data.meals));
 
+    showMeals.textContent = '';
+
 }
 const displayFood = foods => {
-    // console.log(foods);
+  
     foods.forEach(food => {
         // console.log(food);
-        const showMeals =  document.getElementById('show-meals')
+        
         const div = document.createElement('div')
         div.classList.add('col')
         div.innerHTML=`
