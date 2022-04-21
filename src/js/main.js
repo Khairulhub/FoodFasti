@@ -1,8 +1,9 @@
+console.log('hello');
 const searchMeals = () => {
     const searchInput = document.getElementById('searchInput')
     const searchText = searchInput.value;
-    searchInput.value = '';
-    // console.log(searchText);
+    // searchInput.value = '';
+    console.log(searchText);
 
 
      const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
@@ -12,9 +13,9 @@ const searchMeals = () => {
 
 }
 const displayFood = foods => {
-    console.log(foods);
+    // console.log(foods);
     foods.forEach(food => {
-        console.log(food);
+        // console.log(food);
         const showMeals =  document.getElementById('show-meals')
         const div = document.createElement('div')
         div.classList.add('col')
@@ -25,7 +26,7 @@ const displayFood = foods => {
                   <h5 class="card-title">${food.strMeal}</h5>
                   <p class="card-text">Catagory : ${food.strCategory}</p>
                   <p class="card-text">Area : ${food.strArea}</p>
-                  <button type="button" class="btn btn-warning">Info</button>
+                  <button onclick="showFoodDetails(${food.idMeal})" type="button" class="btn btn-warning">Info</button>
                 </div>
               </div>
         `;
@@ -33,4 +34,12 @@ const displayFood = foods => {
         
     })
 
+}
+
+// take food Id and call api
+const showFoodDetails = foodId => {
+  const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${foodId}`
+  fetch(url)
+  .then(res => res.json())
+  .then(data => console.log(data.meals[0]))
 }

@@ -40,12 +40,10 @@
                             <a class="nav-link text-warning ">Price & menu</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-
-                        <input id="searchInput" class="form-control me-2 " type="search" placeholder="Search your food"
-                            aria-label="Search">
-                        <button onclick="searchMeals()" class="btn btn-outline-warning" type="submit">Search</button>
-                    </form>
+                    <div class="d-flex"> <!--from-->
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button onclick="searchMeals()" class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -125,10 +123,24 @@
         <!-- Food Show -->
         <h1 class="text-warning text-center text-decoration-underline my-4">  See Foods  </h1>
         <!-- food show in card -->
-        <div class="row row-cols-1 row-cols-md-3 g-4" id="show-meals">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="show-meals">
             
+                </div>
+        
+            </div>
+            <div class="col-md-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
         </div>
-
     </main>
 
 
